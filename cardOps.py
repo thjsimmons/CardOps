@@ -5,7 +5,7 @@ from util import *
 
 
 ANSWER = 46  # <--USER ENTERS DESIRED CARD THEY ARE TRYING TO GET TO HERE 
-MYCARD_NAMES = ['4', '4', '8', '8', '9', '10', '10'] # <--USER ENTERS CARDS IN HAND HERE
+MYCARD_NAMES = ['4', '4', '8'] # <--USER ENTERS CARDS IN HAND HERE
 
 MYCARDS = cards2nums(MYCARD_NAMES)
 
@@ -102,11 +102,11 @@ def main():
     print "Cards = ", MYCARDS
     print "PYTHON GO BRRRRR ..."
 
-    for i in range(len(MYCARDS)):
 
-        path = graph(0, [], MYCARDS, True) # operator paths to get to answer 
- 
-    if path is not None:
+
+    path = graph(0, [], MYCARDS, True) # operator paths to get to answer 
+   
+    if path:
         print(path)
         writePaths(path)
     else:
