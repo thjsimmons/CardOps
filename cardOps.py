@@ -4,7 +4,7 @@ from util import *
 # Finding operator combinations with an operator tree
 
 
-ANSWER = 7  # <--USER ENTERS DESIRED CARD THEY ARE TRYING TO GET TO HERE 
+ANSWER = 46  # <--USER ENTERS DESIRED CARD THEY ARE TRYING TO GET TO HERE 
 MYCARD_NAMES = ['4', '4', '8', '8', '9', '10', '10'] # <--USER ENTERS CARDS IN HAND HERE
 
 MYCARDS = cards2nums(MYCARD_NAMES)
