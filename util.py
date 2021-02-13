@@ -54,13 +54,15 @@ def operator(result, op, N):
         else:
             res = B**A
     if op == 8:
-        if B != 0:
-            res = A**(1/float(B)) if A >= 0 else 99999999
+        if B > 1/80.0:
+            if B != 0:
+                res = A**(1/float(B)) if A >= 0 else 99999999
         else:
             res = 9999999999
     if op == 9:
-        if A != 0:
-            res = B**(1/float(A)) if A >= 0 else 99999999
+        if A > 1/80.0:
+            if A != 0:
+                res = B**(1/float(A)) if A >= 0 else 99999999
         else:
             res = 9999999999
     if op == 10:
