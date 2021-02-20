@@ -113,6 +113,6 @@ def main():
         writePaths(path)
     else:
         print "no paths found! :< better luck next time, comrade"
-    return 0
 
-main()
+if __name__ == '__main__':
+    main()
